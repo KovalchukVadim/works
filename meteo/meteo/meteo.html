@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/FileSaver.js"></script>
+</head>
+
+<body>
+    <label for="input-download" class="download">Завантаження</label>
+    <input type="file" onchange="openFile(event)" id="input-download">
+
+    <form class="form">
+        <div>
+            <p class="des-span">Табличне значення <br>тиску (мм рт. ст.)</p>
+            <input type="text" id="bar" value="750">
+        </div>
+        <div>
+            <p class="des-span">Табличне значення <br>температури повітря (°С)</p>
+            <input type="text" id="temp" value="15">
+        </div>
+    </form>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

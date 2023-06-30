@@ -1,0 +1,101 @@
+.footer {
+    font-family: 'Lexend', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 320px) and (max-width: 796px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        & .contact {
+            // padding-top: 24px;
+            width: 100% !important;
+        }
+        & .footer-desc {
+            display: none;
+        }
+        & .footer-social {
+            padding-bottom: 44px;
+            margin-top: 44px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    & .footer-spot-one {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        background: #82BBFF;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(90deg);
+        z-index: -1;
+        right: 50px;
+        top: -75px;
+    }
+    & .footer-spot-two {
+        position: absolute;
+        width: 438px;
+        height: 494px;
+        top: 0;
+        right: 150px;
+        background: #B9FF82;
+        opacity: 0.3;
+        filter: blur(60px);
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+    & .footer-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #626687;
+        opacity: 0.75;
+        width: 320px;
+        padding-top: 16px;
+        padding-bottom: 30px;
+    }
+    & .footer-icon {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    & .contact a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #888B97;
+        padding-bottom: 18px;
+    }
+    & .contact li {
+        padding-bottom: 18px;
+        @media (min-width: 320px) and (max-width: 530px) {
+            padding-bottom: 12px;
+        }
+    }
+    & .contact {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media (min-width: 320px) and (max-width: 530px) {
+            font-size: 14px;
+        }
+        & .contact-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #0E1735;
+            padding-bottom: 24px;
+            @media (min-width: 320px) and (max-width: 530px) {
+                font-size: 16px;
+                padding-bottom: 18px;
+            }
+        }
+    }
+}
+
+.footer a {
+    text-decoration: none;
+}
